@@ -1,0 +1,8 @@
+<!--miniprogram/pages/robot/robot.wxml-->
+<view class="bg" style="opacity:{{0.4}}" >
+    <image class="bg-image" mode="scaleToFill"></image>
+</view>
+<input class="inputindex" placeholder="来跟阳小花聊聊天吧" placeholder-class='iconfont icon-sousuo mid-font ' placeholder-style="font-size:30px; color:#778899;" style="font-weight:bolder; font-size:30px; color:#999999; padding-left: 30rpx" bindinput="flower"> </input>
+<button class="btn-index" bindtap="send">说完了</button>
+<image src="http://img3.imgtn.bdimg.com/it/u=2424655553,3394536549&fm=214&gp=0.jpg"></image>
+<view class="ans">{{answer}}</view>

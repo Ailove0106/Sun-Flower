@@ -1,0 +1,54 @@
+/* pages/heidong/heidong.wxss */
+.bg{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575104550341&di=806a2f6bb8d20272617cb9a50314564a&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201603%2F30%2F20160330212810_XuQ5e.jpeg') 
+no-repeat #000;
+background-size:cover;
+z-index:-1;
+}
+.bg-image{
+    width : 100%;
+    height : 100%;
+}
+.heidong3{
+  text-align:center;
+}
+.heidong4{
+   text-align:center;
+   font-weight:bold;
+}
+.heidong5{
+  text-align:center;
+  font-weight:bolder;
+}
+.heidong6{
+  text-align:center;
+}
+.imagesize{
+ display:flex;
+ justify-content: center;
+}
+.imagesize image { 
+  width:800rpx;
+  height:800rpx;
+}
+.btn1 {
+  width: 80%;
+  margin-top: 20rpx;
+  background-color: burlywood;
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.btnImg {
+  margin-right: 8rpx;
+  width: 46rpx;
+  height: 46rpx;
+}

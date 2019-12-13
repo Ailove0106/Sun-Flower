@@ -1,0 +1,138 @@
+.bg{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575104550341&di=806a2f6bb8d20272617cb9a50314564a&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201603%2F30%2F20160330212810_XuQ5e.jpeg') 
+no-repeat #000;
+background-size:cover;
+z-index:-1;
+}
+.bg-image{
+    width : 100%;
+    height : 100%;
+}
+.sheet {
+  background: #fff;
+  border-radius: 36rpx;
+  margin-top: 160rpx;
+  margin-left:70rpx;
+  width: 84%;
+  height: 570rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.naire {
+  height: 430rpx;
+}
+.question {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-top: 40rpx;
+  margin-left: 32rpx;
+}
+.border {
+  height: 2rpx;
+  width: 90%;
+  background-color: #d4d4d4;
+  margin: 16rpx auto;
+}
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  font-size: 30rpx;
+  text-indent: 14rpx;
+  margin-top: 40rpx;
+}
+.radio {
+  margin-bottom: 14rpx;
+}
+.button-group {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+}
+.button {
+  background: #fcbe39;
+  border-radius: 100rpx;
+  font-size: 30rpx;
+  line-height: 52rpx;
+  height: 52rpx;
+  width: 172rpx;
+  font-weight: bold;
+  color: #fff;
+}
+.button::after {
+  border: 0;
+}
+.id {
+  text-align: center;
+  font-size: 24rpx;
+  color: #c2c2c2;
+  margin: auto;
+  margin-top: 20rpx;
+}
+.day-weather{
+  color: black;
+}
+.imagesize{
+ display:flex;
+ justify-content: center;
+}
+.imagesize image { 
+  width:600rpx;
+  height:400rpx;
+}
+.a0{
+  text-align:center;
+  font-weight:250%;
+  font-size:200%;
+}
+.a1{
+  margin-left:42.25%;
+  font-weight:170%;
+  font-size:170%;
+}
+.a2{
+  text-align:center;
+  font-weight:130%;
+  font-size:130%;
+}
+.a3{
+  text-align:center;
+  text-decoration:underline;
+}
+.a4{
+  text-align: center;
+  text-decoration:underline;
+}
+.a5{
+  margin-left:20%;
+}
+.b1{
+  text-align:center;
+  font-weight:250%;
+  font-size:200%;
+}
+.b2{
+  font-weight:140%;
+  font-size:140%;
+}
+.b3{
+  font-weight:120%;
+  font-size:120%;
+}
+.b5{
+  text-align:center;
+  font-weight:150%;
+  font-size:150%;
+}
+.b6{
+  text-align: center;
+  font-weight:10%;
+  font-size:110%;
+}

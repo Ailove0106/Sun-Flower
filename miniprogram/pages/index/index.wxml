@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<input class="inputindex" placeholder="输入查询问题" placeholder-class='iconfont icon-sousuo mid-font ' placeholder-style="font-size:30px; color:#778899;" style="font-weight:bolder; font-size:30px; color:#999999; padding-left: 30rpx" bindinput="abc"> </input>
+
+<button class="btn-index" bindtap="send">
+<image class='btnImg' open-type='openSetting' src="../image/search.png"></image>
+<view>点我查询</view>
+</button>
+  <view class="motto">{{motto}}</view>
+<import src="../../wxParse/wxParse.wxml"/>
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+<view class="bg" style="opacity:{{0.4}}" >
+    <image class="bg-image" mode="scaleToFill"></image>
+</view>

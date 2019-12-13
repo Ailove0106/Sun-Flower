@@ -1,0 +1,28 @@
+<!--pages/heidong/heidong.wxml-->
+<view class="bg" style="opacity:{{0.4}}" >
+    <image class="bg-image" mode="scaleToFill"></image>
+</view>
+<view class="heidong3">感觉自己无处宣泄自己的情绪吗？</view>
+<view class="heidong4">感觉没有人会倾听你的宣泄吗？</view>
+<view class="heidong5">感觉不知道怎么开口吗？</view>
+<view class="heidong6">
+<view>小小黑洞，
+</view>
+<view>在这里，
+</view>
+<view>陪伴着，
+</view>
+<view>倾听你的烦恼
+</view>
+</view>
+<button  class="btn1" wx:if="{{a==0}}" bindtap="heidong1" plain="true">
+<image class='btnImg' open-type='openSetting' src="../image/phone1.png"></image>
+<view>来个黑洞！</view>
+</button>
+<button  class="btn1" wx:if="{{a==2}}" bindtap="heidong2" plain="true">
+<image class='btnImg' open-type='openSetting' src="../image/phone1.png"></image>
+<view>取消黑洞！</view>
+</button>
+<view class='imagesize'>
+  <image wx:if="{{a==2}}" src="http://img.mp.itc.cn/upload/20170730/5d280c019d85476ba7c4dd623f196908_th.jpg" class='in-image'   ></image>
+</view>

@@ -1,0 +1,31 @@
+/* miniprogram/pages/robot/robot.wxss */
+.bg{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575104550341&di=806a2f6bb8d20272617cb9a50314564a&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201603%2F30%2F20160330212810_XuQ5e.jpeg') 
+no-repeat #000;
+background-size:cover;
+z-index:-1;
+}
+.inputindex{
+  color:aliceblue;
+  border-radius: 15px;
+  margin: 0 0 3px 18px;
+  width: 270px;
+  height: 2.8rem;
+  min-height: 2.8rem;
+}
+.ans{
+  text-align:center;
+  font-size:30px;
+}
+.btn-index{
+  width: 80%;
+  margin-top: 20rpx;
+  background-color: beige;
+  color: black;
+  border-radius: 98rpx; 
+}

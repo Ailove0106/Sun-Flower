@@ -1,0 +1,112 @@
+<view class="bg" style="opacity:{{0.4}}" >
+    <image class="bg-image" mode="scaleToFill"></image>
+</view>
+<view wx:if="{{zhuanhuan%3==1}}">
+<view class="a0">阳小花（SDS）测评表</view>
+<view class='imagesize'>
+  <image src="http://img5.imgtn.bdimg.com/it/u=735177454,520551589&fm=26&gp=0.jpg" class='in-image'   >
+  </image>
+</view>
+<view class="a1">SDS</view>
+<view class="a2">简介：</view>
+<view class="a4">1.SDS抑郁自评量表是一种可以测量抑郁的工具</view>
+<view class="a4">2.量表使用简便,可以反映抑郁患者的主观感受</view>
+<view class="a2">优点：</view>
+<view class="a3">使用简单，有效测评，分析方便</view>
+<view class="a2">注意事项：</view>
+<view class="a4">1.SDS主要适用于具有抑郁症状的成年人</view>
+<view class="a4">2.测试答案根据最近一周的实际感觉给出</view>
+<view class="a5">答案对照如下：
+<view>偶尔：没有或很少时间</view>
+<view>有时：少部分时间</view>
+<view>经常：相当多时间</view>
+<view>持续：绝大部分时间或全部时间</view>
+</view>
+<button bindtap="zhuan">点我参加测试吧</button>
+</view>
+<view wx:if="{{zhuanhuan%3==2}}">
+<swiper class='sheet' current="{{id}}">
+<block wx:for="{{qnaire}}">
+<swiper-item catchtouchmove="stopTouchMove">
+<form bindsubmit='submit'>
+<view class='naire'>
+<view class='question'>{{item.question}}</view>
+<radio-group  class='radio-group' name='answer' bindchange='radioChange'>
+<label class='radio'><radio value="1" color='#fcbe39' />{{item.option.a}}</label>
+<label class='radio'><radio value="2" color='#fcbe39'/>{{item.option.b}}</label>
+<label class='radio'><radio value="3" color='#fcbe39'/>{{item.option.c}}</label>
+<label class='radio'><radio value="4" color='#fcbe39'/>{{item.option.d}}</label>
+</radio-group>
+</view>
+<view  class='button-group'>
+<button class='button' hover-class='none' bindtap='lastq' disabled='{{id==0}}'>上一题</button>
+<button class='button' hover-class='none' form-type='submit' wx:if="{{id<19}}" bindtap='nextq'>下一题</button>
+<button class='button' hover-class='none' form-type='submit' bindtap='formSubmit' wx:else>提交</button>
+</view>
+<view class='id'>{{id+1}}/{{qnaire.length}}</view>
+</form>
+</swiper-item>
+</block>
+</swiper> 
+</view>
+<view wx:if="{{zhuanhuan%3==0}}">
+<view class="b1">您的报告结果如下</view>
+<view wx:if="{{sum1<53}}">
+<view class="b5">您没有抑郁症状哦φ(゜▽゜*)♪</view>
+<view class="b6">o(*≧▽≦)ツ如果您有烦恼的话可以向阳小花倾诉哦</view>
+<view class="b6">开心的事情总会到来的，所以要笑口常开啊(*^▽^*)و✧</view>
+<view class="b6">阳小花祝您每天生活开心(*^▽^*)</view>
+</view>
+<view wx:if="{{sum1>=53&&sum1<63}}">
+<view class="b2">抑郁程度：</view>
+<view class="b3">轻度抑郁</view>
+<view class="b2">阳小花参考建议：</view>
+<view class="b3">第一条：</view>
+<view class="b4">保证充足的睡眠。</view>
+<view class="b3">第二条：</view>
+<view class="b4">与精力旺盛又充满希望的人交往。</view>
+<view class="b3">第三条：</view>
+<view class="b4">最好将日常生活中美好的事记录下来。</view>
+<view class="b3">第四条：</view>
+<view class="b4">谈谈你的感受和恐惧,找到合适的人进行交谈。</view>
+<view class="b3">第五条：</view>
+<view class="b4">当你感到悲伤开始蔓延时，请进行业余爱好或锻炼。</view>
+<view class="b3">第六条：</view>
+<view class="b4">让你的亲人和朋友知道你有抑郁症。接受他们的安慰。</view>
+</view>
+<view wx:if="{{sum1>=63&&sum1<73}}">
+<view class="b2">抑郁程度：</view>
+<view class="b3">中度抑郁</view>
+<view class="b2">阳小花参考建议：</view>
+<view class="b3">第一条：</view>
+<view class="b4">保证充足的睡眠。</view>
+<view class="b3">第二条：</view>
+<view class="b4">考虑养宠物。养“互动”性强的宠物。</view>
+<view class="b3">第三条：</view>
+<view class="b4">尝试着多与人们接触和交往，不要自己独来独往。</view>
+<view class="b3">第四条：</view>
+<view class="b4">让你的亲人和朋友知道你有抑郁症。接受他们的安慰。</view>
+<view class="b3">第五条：</view>
+<view class="b4">如果你和别人谈论你不开心的事感到不自在，就考虑写日记吧。</view>
+<view class="b3">第六条：</view>
+<view class="b4">看看那些经历过抑郁症或其他重大磨难的人的电影，并找到勇气和力量。</view>
+</view>
+<view wx:if="{{sum1>=73}}">
+<view class="b2">抑郁程度：</view>
+<view class="b3">重度抑郁</view>
+<view class="b2">阳小花参考建议：</view>
+<view class="b3">第一条：</view>
+<view class="b4">如果你被规定使用药物，就服用它！药物可以帮助你身体回到正轨。</view>
+<view class="b3">第二条：</view>
+<view class="b4">庆祝小的成就。列出你认为你每天可以做什么，并奖励自己的小成功。</view>
+<view class="b3">第三条：</view>
+<view class="b4">谈谈你的感受和恐惧。把事情藏在心里看起来是件好事，但实际上它会使事情看起来比现在糟糕得多。</view>
+<view class="b3">第四条：</view>
+<view class="b4">学会深呼吸，冥想。冥想和深呼吸真的能让你受益匪浅，因为它们能在较短的时间内缓解你的负面情绪。</view>
+<view class="b3">第五条：</view>
+<view class="b4">每一天都是新的。过去的已经过去了，它只存在于记忆中。不管发生了什么事，你总是可以“重新开始”。</view>
+<view class="b3">第六条：</view>
+<view class="b4">找一张你自己的照片。当你对自己感觉不好（渴望死亡或伤害自己），请看看自己儿童时期的照片。提醒自己，这个孩子生活在你身上，并且依靠你来保护他/她。</view>
+</view>
+<button bindtap="zhuan1">返回</button>
+</view>
