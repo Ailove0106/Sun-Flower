@@ -1,8 +1,16 @@
 <!--miniprogram/pages/robot/robot.wxml-->
-<view class="bg" style="opacity:{{0.4}}" >
+<text>\n</text>
+<text>\n</text>
+<text>\n</text>
+<view class="bg" style="opacity:{{0.3}}" >
     <image class="bg-image" mode="scaleToFill"></image>
 </view>
-<input class="inputindex" placeholder="来跟阳小花聊聊天吧" placeholder-class='iconfont icon-sousuo mid-font ' placeholder-style="font-size:30px; color:#778899;" style="font-weight:bolder; font-size:30px; color:#999999; padding-left: 30rpx" bindinput="flower"> </input>
-<button class="btn-index" bindtap="send">说完了</button>
-<image src="http://img3.imgtn.bdimg.com/it/u=2424655553,3394536549&fm=214&gp=0.jpg"></image>
+<view class="girl">
+<image mode='aspectFit' src="http://tiebapic.baidu.com/forum/w%3D580%3B/sign=ca29c54e0a950a7b75354ecc3aea63d9/bf096b63f6246b608a122c0cfcf81a4c510fa2ae.jpg"></image>
+</view>
 <view class="ans">{{answer}}</view>
+<text>\n</text>
+<view class="ff1984">
+<input class="inputindex" placeholder="来跟阳小花聊聊天吧~" placeholder-class='iconfont icon-sousuo mid-font ' placeholder-style="font-size:30px; color:#778899;" style="font-weight:bolder; font-size:30px; color:#999999; padding-left: 30rpx; padding-right: 30rpx" bindinput="flower"> </input>
+</view>
+<button class="btn-index" hover-class="hover" bindtap="send">说完啦！</button>

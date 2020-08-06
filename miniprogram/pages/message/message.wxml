@@ -21,22 +21,42 @@
 <view class="bg" style="opacity:{{0.4}}" >
     <image class="bg-image" mode="scaleToFill"></image>
 </view>
-<view class="a">心理素质教育中心预约方式</view>
+<text>\n</text>
+<text>\n</text>
+<text>\n</text>
+<view class="a">心理素质教育中心预约</view>
+<view wx:if="{{zhuce==0}}">
+<view class="container">
+ <view class="card">
+<view class="ffff" >
+<input class="inputindex" placeholder="输入姓名" placeholder-class='iconfont icon-sousuo mid-font ' placeholder-style="font-size:23px; color:#778899;text-align:center;" style="font-weight:bolder; font-size:25px; color:#999999; text-align:center;margin-top:10px;" bindinput="inputname" > </input>
+</view>
+<view class="ffff" >
+<input class="inputindex" placeholder="输入学号" placeholder-class='iconfont icon-sousuo mid-font ' placeholder-style="font-size:23px; color:#778899;" style="font-weight:bolder; font-size:25px; color:#999999; text-align:center;margin-top:10px;" bindinput="inputnum"> </input>
+</view>
 <view>
-<view class='imagesize'>
-  <image src="/pages/image/zixun1.jpg" class='in-image'   ></image>
+<button class="btn-index" hover-class="hover" bindtap="tijiao">提交</button>
+<view class="a2" >该功能尚未投入使用</view>
+<view class="a2" >任意输入信息即可查看预约界面 </view>
 </view>
-<input class="inputindex" placeholder="输入姓名" placeholder-class='iconfont icon-sousuo mid-font ' placeholder-style="font-size:20px; color:#778899;" style="font-weight:bolder; font-size:20px; color:#999999; padding-left: 20rpx" bindinput="inputname"> </input>
-<input class="inputindex" placeholder="输入学号" placeholder-class='iconfont icon-sousuo mid-font ' placeholder-style="font-size:20px; color:#778899;" style="font-weight:bolder; font-size:20px; color:#999999; padding-left: 20rpx" bindinput="inputnum"> </input>
-<button class="btn-index" bindtap="tijiao">提交</button>
+</view>
+</view>
+</view>
 <modal hidden="{{tijiao}}" no-cancel bindconfirm="back"><view>提交成功</view></modal>
-</view>
+<modal hidden="{{tijiao1}}" no-cancel bindconfirm="back1"><view>请输入预约信息</view></modal>
+<view wx:if="{{zhuce==1}}">
+<text>\n</text>
+<view class="container">
+ <view class="card">
 <view class="a6">
+<view class="a2" >点击按钮预约</view>
+<view class="f">西土城校区</view>
 <view class="a2">咨询时段</view>
-<view class="a2">点击按钮预约</view>
 <view class="a3">周一至周五</view>
 <button class="a4" plain="true" bindtap="modalTap">上午：9：50至11：30</button>
+<text>\n</text>
 <button class="a4" plain="true" bindtap="aodalTap">下午：14：45至17：20</button>
+<text>\n</text>
 <button class="a4" plain="true" bindtap="bodalTap">晚上：18：30至20：55</button>
 <view class="a2">咨询地点</view>
 <view class="a3">学生发展中心一层</view>
@@ -44,17 +64,25 @@
 <view class="a2">咨询电话</view>
 <view class="a5">010-62281882</view>
 </view>
-<view class='imagesize'>
-  <image src="/pages/image/zixun2.jpg" class='in-image'   ></image>
 </view>
+</view>
+<text>\n</text>
+<view class="container">
+ <view class="card">
 <view class="a6">
+<view class="f">沙河校区</view>
 <view class="a2">咨询时段</view>
 <view class="a3">周一至周五</view>
 <button class="a4" plain="true" bindtap="codalTap">下午：15：40至17：20</button>
+<text>\n</text>
 <button class="a4" plain="true" bindtap="dodalTap">晚上：18：30至20：05</button>
 <view class="a2">咨询地点</view>
 <view class="a3">综合办公楼</view>
 <view class="a5">305室、306室、307室</view>
 <view class="a2">咨询电话</view>
 <view class="a5">010-66605525</view>
+</view>
+</view>
+</view>
+<text>\n</text>
 </view>

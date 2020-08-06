@@ -1,8 +1,10 @@
-// miniprogram/pages/message/message.js
+// 关键功能是数据库读写
 Page({
 
   data: {
+    zhuce:0,
     tijiao:true,
+    tijiao1:true,
     contents: "",
     name:0,
     xuehao:0,
@@ -27,15 +29,30 @@ Page({
     dodalHidden2: true,
     dodalHidden3: true,
   },
+  //以下一部分是提示框实现，有重复部分实现多个按钮
  tijiao:function()
  {
-   this.setData({
-     tijiao: false
-   })
+   if(!this.data.name)
+   {
+     this.setData({
+       tijiao1: false,
+     })
+   }
+   else {
+     this.setData({
+       tijiao: false,
+       zhuce: 1
+     })
+   }
  },
   back: function () {
     this.setData({
       tijiao: true
+    })
+  },
+  back1: function () {
+    this.setData({
+      tijiao1: true
     })
   },
   inputname:function(e){
@@ -69,7 +86,7 @@ Page({
       modalHidden3: true
     })
   },
-
+//以下开始重复
   aodalChange: function () {
     this.setData({
       aodalHidden: true
@@ -179,9 +196,8 @@ Page({
         traceUser: true,
       })
     }
-    //初始化数据库
     const db = wx.cloud.database()
-    //向数据库添加一条记录
+    //向数据库添加一条预约记录
     db.collection('hello').add({
       // data 字段表示需新增的 JSON 数据
       data: {
@@ -192,12 +208,11 @@ Page({
         tile:this.data.num
       },
       success: function (res) {
-        // res 是一个对象，其中有 _id 字段标记刚创建的记录的 id
         console.log(res)
       }
     })
   },
-
+  //以下为重复按钮功能
   submita: function () {
 
     var abc = this.data.numa

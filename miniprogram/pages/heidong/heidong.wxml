@@ -1,28 +1,38 @@
 <!--pages/heidong/heidong.wxml-->
+<text>\n</text>
+<text>\n</text>
+<text>\n</text>
 <view class="bg" style="opacity:{{0.4}}" >
     <image class="bg-image" mode="scaleToFill"></image>
 </view>
-<view class="heidong3">感觉自己无处宣泄自己的情绪吗？</view>
-<view class="heidong4">感觉没有人会倾听你的宣泄吗？</view>
-<view class="heidong5">感觉不知道怎么开口吗？</view>
-<view class="heidong6">
-<view>小小黑洞，
+
+<view class="section title-card">
+  <view class="flex-wrp" style="flex-direction:column;">
+    <view class="flex-item title1">把烦恼统统甩掉吧 </view>
+    <view class="flex-item title-line"></view>
+    <view class="flex-item title1">从此不再烦心</view>
+  </view>
 </view>
-<view>在这里，
+
+
+<view class="contain">
+ <!-- 导航栏 -->
+ <scroll-view class="tab" scroll-x scroll-left="{{tabScroll}}" scroll-with-animation="true">
+ <block wx:for="{{header}}" wx:key="index">
+  <view class="tab-item {{currentTab == index ? 'active' : ''}}" data-current="{{index}}" bindtap='clickMenu'>{{item.name}}</view>
+ </block>
+ </scroll-view>
+ 
+ <view class="bookCardFlex" style="flex-direction:column;">
+        <block wx:for="{{header[currentTab].books}}" wx:key="item">   
+          <view class="flex-item bookCard">
+            <image src="{{item.img}}" lazy-load="true" mode="widthFix"></image>
+            <view class="flex-item cton h4 card-title">{{item.title}} </view>
+            <view class="flex-item cton title2">{{item.desc}}</view>
+            <button class='btn-primary cton left'  hover-class="hover" size='mini' bindtap='showModal' data-current='{{item}}'>摸 摸 头 {{num+(currentTab+1)*(index+100)%(index+2)+index}}</button>
+            <button class='btn-primary cton left'  hover-class="hover" size='mini' bindtap='showModal2' data-current='{{item}}'> ❤ {{num2+(currentTab+index)*(index+150)%(index+7)+index}}</button>
+          </view>
+        </block>
+  </view>
 </view>
-<view>陪伴着，
-</view>
-<view>倾听你的烦恼
-</view>
-</view>
-<button  class="btn1" wx:if="{{a==0}}" bindtap="heidong1" plain="true">
-<image class='btnImg' open-type='openSetting' src="../image/phone1.png"></image>
-<view>来个黑洞！</view>
-</button>
-<button  class="btn1" wx:if="{{a==2}}" bindtap="heidong2" plain="true">
-<image class='btnImg' open-type='openSetting' src="../image/phone1.png"></image>
-<view>取消黑洞！</view>
-</button>
-<view class='imagesize'>
-  <image wx:if="{{a==2}}" src="http://img.mp.itc.cn/upload/20170730/5d280c019d85476ba7c4dd623f196908_th.jpg" class='in-image'   ></image>
-</view>
+

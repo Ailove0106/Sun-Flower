@@ -8,19 +8,20 @@
   ],
   "window": {
     "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#FF8C00",
+    "navigationStyle": "custom",
+  "navigationBarBackgroundColor": "#FFA500",
     "navigationBarTitleText": "阳小花",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
   },
   "tabBar": {
-    "selectedColor": "#fff",
+    "selectedColor": "#A9A9A9",
     "list": [
       {
         "selectedIconPath": "pages/image/two.png",
         "iconPath": "pages/image/two2.png",
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "text": "趣闻轶事"
       },
       {
         "selectedIconPath": "pages/image/three.png",
@@ -38,17 +39,17 @@
         "selectedIconPath": "pages/image/heidong.png",
         "iconPath": "pages/image/heidong2.png",
         "pagePath": "pages/heidong/heidong",
-        "text": "黑洞"
+        "text": "烦恼黑洞"
       },
       {
         "selectedIconPath": "pages/image/robot.png",
         "iconPath": "pages/image/robot2.png",
         "pagePath": "pages/robot/robot",
-        "text": "机器人"
+        "text": "智能小花"
       }
     ],
-    "color": "#b0bec5",
-    "backgroundColor": "#FFD700",
+    "color": "black",
+    "backgroundColor": "#FFFACD",
     "borderStyle": "white",
     "position": "bottom"
   },

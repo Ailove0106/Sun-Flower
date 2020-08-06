@@ -1,13 +1,36 @@
 <!--index.wxml-->
-<input class="inputindex" placeholder="输入查询问题" placeholder-class='iconfont icon-sousuo mid-font ' placeholder-style="font-size:30px; color:#778899;" style="font-weight:bolder; font-size:30px; color:#999999; padding-left: 30rpx" bindinput="abc"> </input>
+<text>\n</text>
+<text>\n</text>
+<text>\n</text>
+<view class="a2">开眼世界</view>
+<video style="width:100%;" src="{{src}}"></video>
 
-<button class="btn-index" bindtap="send">
-<image class='btnImg' open-type='openSetting' src="../image/search.png"></image>
-<view>点我查询</view>
-</button>
-  <view class="motto">{{motto}}</view>
+<view class="a2">每日一笑</view>
+<view class="container">
+ <view class="card">
+<view>{{mes}}</view>
+ </view>
+ </view>
+<button class='goodbutton'  hover-class="hover" bindtap="next">下一个</button>
+<text>\n</text>
+<text>\n</text>
+<text>\n</text>
+ 
+<view class="container">
+ <view class="card">
+<view wx:for="{{head}}">
+top{{item.id}}: {{item.src}}
+</view>
+</view>
+</view>
+<text>\n</text>
+<text>\n</text>
+<view class="container">
+ <view class="card">
 <import src="../../wxParse/wxParse.wxml"/>
 <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
 <view class="bg" style="opacity:{{0.4}}" >
     <image class="bg-image" mode="scaleToFill"></image>
+</view>
+</view>
 </view>

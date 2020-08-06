@@ -5,7 +5,7 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575104550341&di=806a2f6bb8d20272617cb9a50314564a&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201603%2F30%2F20160330212810_XuQ5e.jpeg') 
+background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1576325497485&di=1c3df7cb5e365927fa6695a2eb510f74&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201609%2F16%2F20160916134244_uLvmA.jpeg') 
 no-repeat #000;
 background-size:cover;
 z-index:-1;
@@ -17,15 +17,35 @@ z-index:-1;
   width: 270px;
   height: 2.8rem;
   min-height: 2.8rem;
+  border:2px solid rgb(139, 136, 136);
+}
+.ff1984{
+  display:flex;
+  align-items:center;
+justify-content:center;
+width:100%;
+height:100%;
+}
+
+.btn-index{
+  width: 80%;
+  margin-top: 20rpx;
+  background-color: rgb(243, 182, 103);
+  color: black;
+  border-radius: 98rpx; 
 }
 .ans{
   text-align:center;
   font-size:30px;
+  color:rgba(214, 71, 4, 0.685);
 }
-.btn-index{
-  width: 80%;
-  margin-top: 20rpx;
-  background-color: beige;
-  color: black;
-  border-radius: 98rpx; 
+.girl{
+   display:flex;
+  align-items:center;
+justify-content:center;
+width:100%;
+height:100%;
+}
+.hover {
+  background:  rgb(236, 215, 206);
 }

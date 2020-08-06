@@ -5,7 +5,7 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575104550341&di=806a2f6bb8d20272617cb9a50314564a&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201603%2F30%2F20160330212810_XuQ5e.jpeg') 
+background: url('https://hbimg.huabanimg.com/0a63c98e2738c306e30e7a54e79e5785992ddeef4774d-bWI1Uy_fw658') 
 no-repeat #000;
 background-size:cover;
 z-index:-1;
@@ -18,28 +18,44 @@ z-index:-1;
   text-align: center;
   color:black;
   font-weight: bolder;
-  font-size: 150%;
-   border:5px solid rgba(183, 0, 255, 0.212);
-   background-color: beige;
+  font-size: 160%;
+   border:5px solid rgba(183, 0, 255, 0);
+   background-color: rgba(245, 245, 220, 0);
 }
+.ffff{
+  display:flex;
+  align-items:center;
+justify-content:center;
+width:100%;
+height:100%;
 
+}
 .a2{
   text-align: center;
-  color:rgba(55, 0, 255, 0.568);
+  color:rgba(5, 109, 48, 0.781);
   font-weight: bolder;
+  margin-bottom:10px;
+  margin-top:5px;
+}
+.f{
+  text-align:center;
+  font-weight:bolder;
+  font-size:20px;
+  margin-top:10px;
 }
 .a3{
   text-align: center;
 }
 .a4{
    font-size:75%;
+    border:2px solid rgb(56, 51, 51);
 }
 .a5{
    text-align: center;
-   text-decoration:underline;
+   
 }
 .a6{
-  border:5px solid rgba(183, 0, 255, 0.212);
+  border:5px solid rgba(183, 0, 255, 0);
 }
 .imagesize{
  display:flex;
@@ -55,4 +71,34 @@ z-index:-1;
   background-color: beige;
   color: black;
   border-radius: 98rpx; 
+}
+.inputindex{
+  color:aliceblue;
+  border-radius: 15px;
+  margin: 0 0 18px 18px;
+  width: 270px;
+  height: 2.8rem;
+  min-height: 2.8rem;
+  border:2px solid rgb(124, 122, 122);
+  text-align:center;
+
+}
+.container {
+   align-items: center;
+  justify-content: space-between;
+  padding:40px 20px;
+}
+.card{
+  position: relative;
+  top: 0px;
+  width: 100%;
+    	background-color: rgba(255, 255, 255, 0.473);
+          border-radius: 2px;
+    box-shadow: 1px 1px 14px rgba(68, 62, 62, 0.589); 
+    border-top: 0px;
+    display: flex;
+    flex-direction: column;
+    }
+    .hover {
+  background:  rgb(236, 215, 206);
 }

@@ -5,7 +5,7 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575104550341&di=806a2f6bb8d20272617cb9a50314564a&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201603%2F30%2F20160330212810_XuQ5e.jpeg') 
+background: url('https://hbimg.huabanimg.com/0a84063d9ffea6c44ade025477b904699d939c701e1da-NartT3_fw658') 
 no-repeat #000;
 background-size:cover;
 z-index:-1;
@@ -16,25 +16,23 @@ z-index:-1;
 }
 .heidong3{
   text-align:center;
-}
-.heidong4{
-   text-align:center;
-   font-weight:bold;
-}
-.heidong5{
-  text-align:center;
   font-weight:bolder;
+  margin-top:10px;
+  color:rgb(14, 165, 120);
+  font-size:110%;
 }
-.heidong6{
+.ff{
   text-align:center;
+  margin-top:5px;
+  font-size:95%
 }
 .imagesize{
  display:flex;
  justify-content: center;
 }
 .imagesize image { 
-  width:800rpx;
-  height:800rpx;
+  width:600rpx;
+  height:600rpx;
 }
 .btn1 {
   width: 80%;
@@ -46,9 +44,275 @@ z-index:-1;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+   border:2px solid rgb(56, 51, 51);
 }
 .btnImg {
   margin-right: 8rpx;
   width: 46rpx;
   height: 46rpx;
+}
+.btn-index{
+  width: 80%;
+  margin-top: 20rpx;
+  background-color: beige;
+  color: black;
+  border-radius: 98rpx; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}.login-btn{
+  opacity: 0;
+  display: none;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+  color: #ff7501;
+}
+.header-swiper{
+  width: 100%;
+  
+   height: 200px;
+}
+.header-swiper image{
+  width: 100%;
+  height: 100%;
+}
+ .title-card{
+   margin-top:-40px;
+ background-color: rgba(231, 172, 172, 0.473);
+          border-radius: 1px;
+    box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.15);
+    margin: 0px 10px;
+     font-family:PingFangSC-Medium;
+    }
+     .title1{
+padding: 10px 20px;
+text-align: center;
+    } .title1{
+      font-size:13px;
+line-height:13px;
+    }.title-line {
+      width:80%;
+    border: 1.5px solid #ff7501;
+     }.title3{
+color:rgba(153,153,153,1);
+ font-size:13px;
+font-weight:200;
+line-height:13px;
+padding-top: 10px;}
+.flex-wrp {display: flex;text-align: center;padding: 15px;align-items: center;
+  justify-content: center;}.contain{
+ width: 100%;
+ height: 100%;
+}
+.tab{
+ width: 100%;
+ height: 100rpx;
+ white-space: nowrap;
+ box-sizing: border-box;
+ overflow: hidden;
+ line-height: 100rpx;
+  margin-top:10px;
+}
+.tab-item{
+ display: inline-block;
+ width: 16%;
+ text-align: center;
+ font-size: 14px;
+ color: #4e5052;
+}
+.active{
+ color: #ff502c
+}.content{
+ padding-top: 10rpx;
+ box-sizing: border-box;
+ text-align: center;
+ font-size: 14px;
+}.content-item{
+ overflow-y: scroll
+}
+.bookCard{
+    margin:10px 20px;
+    	background-color: rgba(255, 254, 254, 0.493);
+          border-radius: 3px;
+    box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.15);
+    text-align: center;
+  
+}.bookCard .cton{
+  padding: 5px 15px
+}.bookCard button{
+  margin:5px 15px;
+}
+.bookCardFlex{
+  display: flex;text-align: center;align-items: center;
+  justify-content: center;
+}
+.card-title {
+    margin-bottom: 0.75rem;
+    text-align: left;
+}
+h4, .h4 {
+    font-size: 1.5rem;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}.btn-primary {
+    color: #fff;
+    background-color: #f3a2a2;
+    border-color: #f37a9f;
+}.title2{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}.left{
+  text-align: left;
+  align-items: left;
+  justify-content: left;
+  float: left;
+}
+
+/*使屏幕变暗  */
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+/*对话框 */
+.commodity_attr_box {
+ 
+  width: 94%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  background: #fff;
+  padding:20rpx 3%;
+}
+ 
+.commImg{
+  position: absolute;
+  width:250rpx;
+  height:250rpx;
+  background:#fff;
+  border:1px solid #f5f5f5;
+  z-index: 12;
+  left: 20px;
+  top: -55px;
+  padding:15rpx 0px;
+  border-radius: 10rpx;
+}
+.commImg image{
+  width:100%;
+  height:100%;
+}
+ 
+.column{
+  display: flex;
+  flex-direction: column;
+}
+ 
+.sku-price {
+  color: red;
+  position: relative;
+left: 280rpx;
+  margin: 1rpx;
+}
+.sku-title {
+  position: relative;
+  left: 280rpx;
+  font-size: 14px;
+  margin: 1rpx;
+  width: 330rpx;
+}
+ .line{
+   width: 95%;
+  height: 2rpx;
+  display: inline-block;
+  background-color: #f2f2f2;
+  text-align: center;
+ }
+.line-top{
+  margin: 75rpx 0rpx 5rpx 0rpx;
+}
+ 
+.gg-title{
+ font-size: 15px;
+}
+ 
+.gg text{
+  line-height:50rpx;
+  float:left;
+  margin:20rpx 0 0 26rpx;
+  font-size:12px;
+  border-radius: 5px;
+}
+.gg .active{
+  color:#fff;
+  background:#e64340;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size:14px;
+  padding:2px 2px;
+}.row input{
+  width: 100px;
+}.row text,.row .tel-code{
+  margin: 5px 15px;
+}
+ 
+.btn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.button-add{
+  width:50%;
+  border:0px;
+  background:#4CAF50;
+  color:#fff;
+  border-radius: 0px;
+}
+.button-buy{
+  width:50%;
+  background:#F44336;
+  color:#fff;
+  border-radius: 0px;
+}
+.hover {
+  background:  rgb(236, 215, 206);
 }

@@ -4,7 +4,7 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575104550341&di=806a2f6bb8d20272617cb9a50314564a&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201603%2F30%2F20160330212810_XuQ5e.jpeg') 
+background: url('https://hbimg.huabanimg.com/34fef033faaed4549df7956b43df6d7baa041e0fdc041-9MlUwi_fw658') 
 no-repeat #000;
 background-size:cover;
 z-index:-1;
@@ -88,30 +88,32 @@ z-index:-1;
   height:400rpx;
 }
 .a0{
-  text-align:center;
-  font-weight:250%;
-  font-size:200%;
+   width:800rpx;
+  height:100rpx;
 }
 .a1{
   margin-left:42.25%;
   font-weight:170%;
   font-size:170%;
+  margin-top:7px;
+  margin-bottom:5px;
 }
 .a2{
   text-align:center;
   font-weight:130%;
   font-size:130%;
+
 }
-.a3{
-  text-align:center;
-  text-decoration:underline;
-}
+
 .a4{
   text-align: center;
-  text-decoration:underline;
+color:rgba(5, 109, 48, 0.781);
+margin-top:5px;
+margin-bottom:5px;
 }
 .a5{
   margin-left:20%;
+  margin-top:8px;
 }
 .b1{
   text-align:center;
@@ -136,3 +138,89 @@ z-index:-1;
   font-weight:10%;
   font-size:110%;
 }
+.btn-index{
+  width: 80%;
+  margin-top: 20rpx;
+  background-color: beige;
+  color: black;
+  border-radius: 98rpx; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+   align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+.logo{
+ position: relative;
+ z-index: 1000;
+ opacity: 0;
+}
+.card{
+  position: relative;
+  top: -130px;
+  width: 100%;
+    	background-color: rgba(255, 255, 255, 0.473);
+          border-radius: 2px;
+    box-shadow: 1px 1px 14px rgba(68, 62, 62, 0.589); 
+    border-top: 0px;
+    display: flex;
+    flex-direction: column;
+    }.org-title{
+    	color:#ff7501;
+    	font-size: 23px;
+    }
+    .bas-title{
+    	font-size: 23px;
+    }.card-content{
+      padding: 15px;
+      font-weight: 200px;
+      text-indent:2em;
+      margin-top:90px;
+    }
+    .card-content1{
+      padding: 15px;
+      font-weight: 200px;
+      text-indent:2em;
+      margin-top:20px;
+    }.subtitle {
+    color: #0b99bc;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    transition: all 0.4s ease 0s;
+} .post-title{
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: all 0.4s ease 0s;
+} .post-bar {
+    display: inline-block;
+    margin-right: 3px;
+    color: #aaa;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}.read-more {
+  margin-top:10px;
+    color: #0b99bc;
+    font-size: 14px;
+    font-style: italic;}
+   .env-swiper{
+  width: 100%;
+   height: 400px;
+   /* background-color: green; */
+}
+.phs-items text{
+  display: flex;
+}.phs-items{
+width: 90%;
+  padding: 20px;
+  /* background-color: gold; */
+}.phs-items image{
+  width: 100%;
+  /* background-color: red; */
+  }

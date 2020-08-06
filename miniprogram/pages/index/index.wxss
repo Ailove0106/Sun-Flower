@@ -2,16 +2,26 @@
 .inputindex{
   color:aliceblue;
   border-radius: 15px;
-  margin: 0 0 3px 18px;
+  margin: 0 0 0px 0px;
   width: 270px;
   height: 2.8rem;
   min-height: 2.8rem;
+  border:2px solid rgb(134, 131, 131);
+
+}
+.fff{
+  display:flex;
+  align-items:center;
+justify-content:center;
+width:100%;
+height:100%;
+margin-top:10px;
 }
 .btn-index{
   width: 80%;
   margin-top: 20rpx;
-  background-color: beige;
-  color: black;
+  background-color:  rgb(243, 214, 117);
+  color: rgb(249, 250, 250);
   border-radius: 98rpx; 
   display: flex;
   flex-direction: row;
@@ -35,10 +45,53 @@ z-index:-1;
 }
 .motto{
   text-align:center;
-  font-size:30px;
+  font-size:27px;
+  color:rgb(0, 3, 3);
 }
 .btnImg {
   margin-right: 8rpx;
   width: 46rpx;
   height: 46rpx;
+}
+.container {
+   align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+.card{
+  position: relative;
+  top: 0px;
+  width: 100%;
+    	background-color: rgba(255, 255, 255, 0.685);
+          border-radius: 2px;
+    box-shadow: 1px 1px 14px rgba(68, 62, 62, 0.589); 
+    border-top: 0px;
+    display: flex;
+    flex-direction: column;
+    }
+    .logo{
+ position: relative;
+ z-index: 1000;
+ opacity: 0;
+}
+.a2{
+  text-align: center;
+  color:rgba(5, 109, 48, 0.781);
+  font-weight: bolder;
+  font-size: 30px;
+  margin-bottom:20px;
+  margin-top:10px;
+}
+.goodbutton {
+  margin-top: 30px;
+  width: 80%;
+  background-color: rgb(243, 214, 117);
+  color: white;
+  border-radius: 98rpx;
+  background: bg_red;
+}
+ 
+/* 按下变颜色 */
+.hover {
+  background:  rgb(236, 215, 206);
 }

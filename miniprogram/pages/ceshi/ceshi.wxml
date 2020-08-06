@@ -1,29 +1,44 @@
+
+<text>\n</text>
+<text>\n</text>
+<text>\n</text>
+<modal hidden="{{tijiao}}" no-cancel bindconfirm="back"><view>团队网址（https://oursparkspace.cn/?p=73452）</view></modal>
 <view class="bg" style="opacity:{{0.4}}" >
     <image class="bg-image" mode="scaleToFill"></image>
 </view>
 <view wx:if="{{zhuanhuan%3==1}}">
-<view class="a0">阳小花（SDS）测评表</view>
-<view class='imagesize'>
-  <image src="http://img5.imgtn.bdimg.com/it/u=735177454,520551589&fm=26&gp=0.jpg" class='in-image'   >
-  </image>
+<view class="container">
+
+  <image src="http://tiebapic.baidu.com/forum/w%3D580/sign=1e1f8db7463d26972ed3085565fab24f/aaaef01f3a292df55e0d1c68ab315c6035a87345.jpg" class="logo" mode='aspectFit' animation='{{imgAnim}}'>
+ </image>
+
+ <view class="card">
+  <rich-text class="card-content">
+  <p class="card-text" style="text-indent:2em;"><span class="org-title"></span><span class="bas-title">SDS</span>是一种抑郁自我评测表格，其特点是使用简便，并能相当直观地反映抑郁患者的<span class="bas-title">主观感受</span>及其在治疗中的变化。主要适用于具有抑郁症状的<span class="bas-title">成年人</span>，包括门诊及住院患者。<text>\n</text><span class="org-title"></span> </p>
+  </rich-text>
+  <rich-text class="card-content1">
+  <p class="card-text"><span class="org-title"></span><span class="bas-title">抑郁自评量表</span>是一种测量抑郁的工具。由美国杜克大学教授William W.K.Zung于1965-1966年开发。包括<span class="bas-title">20</span>个项目，每个项目由<span class="bas-title">七</span>级评分构成。包括精神性-情感症状两个项目，躯体性障碍<span class="bas-title">八</span>个项目，精神运动性障碍两个项目，抑郁性心理障碍<span class="bas-title">八个项目</span>。量表使用简便，并可直观地反映抑郁患者的主观感受。</p>
+  </rich-text>
+  <button  class="btn-index" bindtap="zhuan">点我参加测试吧</button>
+<text>\n</text>
+  <swiper autoplay='true' class='env-swiper'>
+   <block wx:for="{{photos}}">
+    <swiper-item class="sw-item">
+      <view class="phs-items">
+        <text class='subtitle'>{{item.subtitle}}</text>
+        <text class="post-title">{{item.title}}</text>
+        <image src="{{baseUrl}}{{item.img}}" lazy-load='true' mode='aspectFit'></image>
+        <text class='post-bar'>{{item.user}} {{item.time}}</text>
+        <text class='read-more' bindtap="readmore">Read More</text>
+      </view>
+    </swiper-item>
+    </block>
+  </swiper>
+ </view>
 </view>
-<view class="a1">SDS</view>
-<view class="a2">简介：</view>
-<view class="a4">1.SDS抑郁自评量表是一种可以测量抑郁的工具</view>
-<view class="a4">2.量表使用简便,可以反映抑郁患者的主观感受</view>
-<view class="a2">优点：</view>
-<view class="a3">使用简单，有效测评，分析方便</view>
-<view class="a2">注意事项：</view>
-<view class="a4">1.SDS主要适用于具有抑郁症状的成年人</view>
-<view class="a4">2.测试答案根据最近一周的实际感觉给出</view>
-<view class="a5">答案对照如下：
-<view>偶尔：没有或很少时间</view>
-<view>有时：少部分时间</view>
-<view>经常：相当多时间</view>
-<view>持续：绝大部分时间或全部时间</view>
+
 </view>
-<button bindtap="zhuan">点我参加测试吧</button>
-</view>
+
 <view wx:if="{{zhuanhuan%3==2}}">
 <swiper class='sheet' current="{{id}}">
 <block wx:for="{{qnaire}}">
