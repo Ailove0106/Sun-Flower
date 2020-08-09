@@ -103,7 +103,7 @@ Page({
       object.id = id;
     object.src = data.title;
     //开头定义的一个空数组,专门用来存这个的
-    itemModel[itemModel.length] = object;
+    itemModel[itemModel.length] = this.data.object.src.replace(/<p>/g, '').replace(/<\/p>/g, '');
     this.setData({
       head: itemModel
     })
