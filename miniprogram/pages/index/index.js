@@ -35,15 +35,19 @@ Page({
   next:function(){
     var that=this;
     wx.request({
-      url: 'https://route.showapi.com/341-5?len=&showapi_appid=146375&showapi_timestamp=20200216114450&showapi_sign=2e53a9fbb831434a8f680db5be7cd4d1',
+      url: 'http://api.tianapi.com/txapi/joke/index',
+      data:{
+      key:"b24bf9ae94f4d8307a30eb8933523441",
+      num:"10",},
       method:"GET",
      ' content-type':'json',
       success:function(e)
       {
-        var src=e.data.showapi_res_body.list
+        var src=e.data.newslist
         that.setData({
-          mes:src[0].text
+          mes:src[0].content
         })
+        console.log(e.data)
       }
     })
   },
