@@ -89,6 +89,7 @@ z-index:-1;
   color: white;
   border-radius: 98rpx;
   background: bg_red;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
  
 /* 按下变颜色 */

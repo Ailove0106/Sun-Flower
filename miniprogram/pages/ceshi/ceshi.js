@@ -198,7 +198,7 @@ Page({
     photos: [{
       "subtitle": "Rails Core Team",
       "title": "Latest News",
-      "img": "http://tiebapic.baidu.com/forum/w%3D580/sign=65f5f5c0be773912c4268569c8188675/af6397dda144ad34ca7434fac7a20cf430ad8540.jpg",
+      "img": "http://8.136.2.212:8080/logo/1.jpg",
       "user": "Developer",
       "time": " December 7,2019"
     }, {

@@ -14,10 +14,10 @@
 
  <view class="card">
   <rich-text class="card-content">
-  <p class="card-text" style="text-indent:2em;"><span class="org-title"></span><span class="bas-title">SDS</span>是一种抑郁自我评测表格，其特点是使用简便，并能相当直观地反映抑郁患者的<span class="bas-title">主观感受</span>及其在治疗中的变化。主要适用于具有抑郁症状的<span class="bas-title">成年人</span>，包括门诊及住院患者。<text>\n</text><span class="org-title"></span> </p>
+  <p class="card-text" style="text-indent:2em;"><span class="org-title"></span>SDS是一种抑郁自我评测表格，其特点是使用简便，并能相当直观地反映抑郁患者的主观感受及其在治疗中的变化。主要适用于具有抑郁症状的成年人，包括门诊及住院患者。<text>\n</text><span class="org-title"></span> </p>
   </rich-text>
   <rich-text class="card-content1">
-  <p class="card-text"><span class="org-title"></span><span class="bas-title">抑郁自评量表</span>是一种测量抑郁的工具。由美国杜克大学教授William W.K.Zung于1965-1966年开发。包括<span class="bas-title">20</span>个项目，每个项目由<span class="bas-title">七</span>级评分构成。包括精神性-情感症状两个项目，躯体性障碍<span class="bas-title">八</span>个项目，精神运动性障碍两个项目，抑郁性心理障碍<span class="bas-title">八个项目</span>。量表使用简便，并可直观地反映抑郁患者的主观感受。</p>
+  <p class="card-text"><span class="org-title"></span>抑郁自评量表是一种测量抑郁的工具。由美国杜克大学教授William W.K.Zung于1965-1966年开发。包括20个项目，每个项目由七级评分构成。包括精神性-情感症状两个项目，躯体性障碍八个项目，精神运动性障碍两个项目，抑郁性心理障碍八个项目。量表使用简便，并可直观地反映抑郁患者的主观感受。</p>
   </rich-text>
   <button  class="btn-index" bindtap="zhuan">点我参加测试吧</button>
 <text>\n</text>

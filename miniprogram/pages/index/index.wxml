@@ -8,7 +8,7 @@
 <view class="a2">每日一笑</view>
 <view class="container">
  <view class="card">
-<view>{{mes}}</view>
+<view style=''>{{mes}}</view>
 <text>\n</text>
 <view>{{mes1}}</view>
 <text>\n</text>

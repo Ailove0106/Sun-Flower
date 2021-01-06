@@ -1,11 +1,9 @@
 // pages/heidong/heidong.js
-//cesehi
 Page({
 
   /**
    * 页面的初始数据
    */
-
   data: {
     num:6,
     num2: 12,

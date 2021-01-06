@@ -30,6 +30,7 @@ z-index:-1;
 .question {
   font-size: 36rpx;
   font-weight: bold;
+  font-family: SimSun;
   margin-top: 40rpx;
   margin-left: 32rpx;
 }
@@ -174,16 +175,18 @@ margin-bottom:5px;
     	font-size: 23px;
     }
     .bas-title{
-    	font-size: 23px;
+    	font-size: 30px;
     }.card-content{
       padding: 15px;
-      font-weight: 200px;
+      font-weight: 250px;
+      font-family: KaiTi,'Times New Roman';
       text-indent:2em;
       margin-top:90px;
     }
     .card-content1{
       padding: 15px;
       font-weight: 200px;
+      font-family: KaiTi,'Times New Roman';
       text-indent:2em;
       margin-top:20px;
     }.subtitle {
