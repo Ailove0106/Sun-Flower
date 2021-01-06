@@ -9,6 +9,9 @@
 <view class="container">
  <view class="card">
 <view>{{mes}}</view>
+<text>\n</text>
+<view>{{mes1}}</view>
+<text>\n</text>
  </view>
  </view>
 <button class='goodbutton'  hover-class="hover" bindtap="next">下一个</button>
