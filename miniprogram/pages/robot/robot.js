@@ -6,7 +6,8 @@ Page({
    */
   data: {
     content:"",
-    answer:"你好呀~我是阳小花"
+    answer:"你好呀~我是阳小花",
+
   },
   flower:function(e){
     this.setData({
