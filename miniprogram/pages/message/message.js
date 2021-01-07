@@ -6,7 +6,6 @@ Page({
     tijiao:true,
     tijiao1:true,
     contents: "",
-    content:"",
     name:0,
     xuehao:0,
     num: 1,
@@ -218,7 +217,7 @@ Page({
     //权限弹窗代码
     const tmplId = 'nrPdEgVbED1uFuYsETdyy24Me25kh0hshbci60v62A8'
       wx.requestSubscribeMessage({
-        tmplIds: [tmplId],//tmplIds为我们订阅消息模块中申请的模板id
+        tmplIds: tmplId,//tmplIds为我们订阅消息模块中申请的模板id
         success(res) {
           if (res[tmplId]=='accept'){
             wx.showToast({
@@ -227,6 +226,23 @@ Page({
           }   
         }
       })
+    wx.requestSubscribeMessage({
+      tmplIds: [tmplId],
+      success(res) {
+        
+          wx.cloud.callFunction({//调用云函数
+            name: 'messageSend',//你的云函数名称
+
+          }).then((res) => {
+            wx.showToast({
+              title: '完成',
+            })
+          })
+        
+       
+      }
+    })
+    
   },
 
   //以下为重复按钮功能
@@ -483,22 +499,13 @@ Page({
         success: function (res) {
           console.log(res.result)
           _this.setData({
-            contents: res.result.data[res.result.data.length - 1].content,
+            contents: res.result.data[res.result.data.length - 1].contents,
             numc: res.result.data[res.result.data.length - 1].tile
           })
         },
         fail: console.error
       })
 
-    wx.cloud.callFunction({
-      name:'helloCloud',
-      data:{
-        message:'helloCloud',
-      }
-    }).then(res=>{
-      console.log(res)//res就将appid和openid返回了
-        //做一些后续操作，不用考虑代码的异步执行问题。
-    })
     wx.cloud.callFunction
       ({
         // 云函数名称
@@ -517,22 +524,9 @@ Page({
         },
         fail: console.error
       })
+  },
 
-    //权限弹窗代码
-    const tmplId = 'rV_13VS_fEQONMZ01D4YOTKDnM8SpQiEFYYqFM-RA1s'
-    wx.requestSubscribeMessage({
-    tmplIds: [tmplId],//tmplIds为我们订阅消息模块中申请的模板id
-    success(res) {
-      if (res[tmplId]=='accept'){
-        wx.showToast({
-        title: '授权成功',
-        })
-      }   
-    }
-    
-})
 
-  }
   
   
 })
