@@ -36,7 +36,6 @@
 </view>
 <view>
 <button class="btn-index" hover-class="hover" bindtap="tijiao">提交</button>
-<view class="a2" >该功能尚未投入使用</view>
 <view class="a2" >任意输入信息即可查看预约界面 </view>
 </view>
 </view>
