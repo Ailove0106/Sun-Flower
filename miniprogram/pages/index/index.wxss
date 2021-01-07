@@ -34,7 +34,7 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575104550341&di=806a2f6bb8d20272617cb9a50314564a&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201603%2F30%2F20160330212810_XuQ5e.jpeg') 
+background: url('http://8.136.2.212:8080/logo/index_bg.png') 
 no-repeat #000;
 background-size:cover;
 z-index:-1;
@@ -54,17 +54,18 @@ z-index:-1;
   height: 46rpx;
 }
 .container {
-   align-items: center;
+  align-items: center;
   justify-content: space-between;
   padding: 0px 20px;
+  font-family: STSong;
 }
 .card{
   position: relative;
   top: 0px;
   width: 100%;
-    	background-color: rgba(255, 255, 255, 0.685);
+    	background-color: rgba(185, 209, 236, 0.685);
           border-radius: 2px;
-    box-shadow: 1px 1px 14px rgba(68, 62, 62, 0.589); 
+    box-shadow: 1px 1px 14px rgba(196, 245, 242, 0.589); 
     border-top: 0px;
     display: flex;
     flex-direction: column;
@@ -76,16 +77,17 @@ z-index:-1;
 }
 .a2{
   text-align: center;
-  color:rgba(5, 109, 48, 0.781);
+  color:rgba(20, 69, 160, 0.781);
   font-weight: bolder;
   font-size: 30px;
+  font-family: KaiTi;
   margin-bottom:20px;
   margin-top:10px;
 }
 .goodbutton {
   margin-top: 30px;
   width: 80%;
-  background-color: rgb(243, 214, 117);
+  background-color: rgb(51, 97, 226);
   color: white;
   border-radius: 98rpx;
   background: bg_red;
